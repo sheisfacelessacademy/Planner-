@@ -1,0 +1,14 @@
+{
+  "name": "My Planner",
+  "short_name": "Planner",
+  "description": "Planner, hábitos, finanças, diário e metas — tudo num só sítio.",
+  "lang": "pt-PT",
+  "start_url": "./#hoje",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f1ea",
+  "theme_color": "#f6f1ea",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
