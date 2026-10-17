@@ -3,34 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Planner</title>
-  <meta name="description" content="A minha app de gestão do dia a dia: planner, hábitos, finanças, diário e metas.">
+  <title>My Planner</title>
+  <meta name="description" content="A minha app de gestão do dia a dia: planner, hábitos, finanças, diário, metas e listas.">
   <meta name="theme-color" content="#f6f1ea">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Planner">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link id="font-link" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="app">
-    <nav class="nav" aria-label="Navegação principal">
-      <div class="brand">
-        <span class="brand-mark">✿</span>
-        <span class="brand-name">my planner</span>
-      </div>
-      <a href="#hoje" data-route="hoje"><span class="ico">☀︎</span><span>Hoje</span></a>
-      <a href="#planner" data-route="planner"><span class="ico">✎</span><span>Planner</span></a>
-      <a href="#habitos" data-route="habitos"><span class="ico">❀</span><span>Hábitos</span></a>
-      <a href="#financas" data-route="financas"><span class="ico">€</span><span>Finanças</span></a>
-      <a href="#diario" data-route="diario"><span class="ico">☾</span><span>Diário</span></a>
-      <a href="#metas" data-route="metas"><span class="ico">✧</span><span>Metas</span></a>
-      <a href="#definicoes" data-route="definicoes" class="nav-settings"><span class="ico">⚙︎</span><span>Definições</span></a>
-    </nav>
+    <nav class="nav" id="nav" aria-label="Navegação principal"></nav>
     <main id="view" class="view" tabindex="-1"></main>
   </div>
 
@@ -40,6 +29,7 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
+  <script src="sync.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
