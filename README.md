@@ -19,13 +19,13 @@ Entrada suave dos cartões, números a contar, gráficos e barras a desenhar-se,
 
 ## Publicar (GitHub Pages)
 
-O workflow `.github/workflows/pages.yml` publica a app automaticamente.
+O workflow `.github/workflows/pages.yml` copia a app para o ramo `gh-pages` a cada alteração e tenta ligar o GitHub Pages sozinho.
 
-1. No GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-2. Faz push (ou corre o workflow à mão em **Actions → Publicar no GitHub Pages → Run workflow**).
-3. A app fica em `https://<utilizador>.github.io/<repositório>/`.
+A app fica em **https://sheisfacelessacademy.github.io/Planner-/**
 
-Depois abre esse link no telemóvel e escolhe **“Adicionar ao ecrã principal”**. Funciona offline.
+Se o link não abrir, liga o Pages à mão uma única vez: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `gh-pages` / `(root)` → Save**.
+
+Depois abre o link no telemóvel e escolhe **“Adicionar ao ecrã principal”**. Funciona offline.
 
 ## Sincronizar telemóvel ↔ computador (opcional)
 
